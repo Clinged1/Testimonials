@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+     ul li::marker {
+    color: var(--clr-Rose-800);
+  }
+}
+
+
+  
+
+  :root {
+
+    --clr-voilet-100: rgb(117, 65, 200);
+    --clr-darkblue-200: rgb(72, 85, 106);
+    --clr-blackishblue-400: rgb(25, 33, 46);
+    --clr-white: rgb(255, 255, 255);
+
+
+    --ff-main: "Barlow Semi Condensed", sans-serif;
+    --ff-500: 500;
+    --ff-600: 600;
+
+
+
+
+
+  --fs-body: 1.125rem;
+  --fs-heading: 1.75rem;
+  }
+
+  ul li::marker {
+    color: var(--clr-Rose-800);
+  }
+
+  
+
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Barlow Semi Condensed;
+  }
+
+
+
+  section > div {
+    border-radius: 0.685rem;
+  }
+
+
+  section {
+    height: 70vh;
+    width: 70vw;
+    display: grid;
+    grid-template-areas: 
+    'daniel daniel jonathan kira'
+    'jean patrick patrick kira'
+    ;
+    grid-template-columns: 2.5fr 2.5fr 2.355fr 2.355fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1.5rem;
+  }
+
+  .daniel {
+    background-color:var(--clr-voilet-100);
+    grid-area: daniel;
+    padding: 1.5rem;
+ 
+  }
+
+  .daniel > div {
+    display: flex;
+    align-items: center;
+    font-size: 0.65rem;
+    color: hsl(0, 0%, 81%);
+
+    
+  }
+
+
+  .daniel img {
+    border-radius: 50%;
+    width: 1.8rem;
+    border: solid hsla(0, 0%, 81%, 0.500) 2px
+    
+  }
+
+
+.dChild p{
+    padding-left: 0.8rem;
+
+}
+
+.daniel svg {
+    position: absolute;
+    left: 39%;
+    top: 15%;
+
+    
+}
+
+
+  .jonathan {
+    background-color: var(--clr-darkblue-200);
+    grid-area: jonathan;
+    padding: 1.5rem;
+  }
+
+  .jonathan > div {
+    display: flex;
+    align-items: center;
+    font-size: 0.65rem;
+    color: hsl(0, 0%, 81%);
+  }
+
+  .jonathan img {
+    border-radius: 50%;
+    width: 1.8rem;
+    border: solid hsla(0, 0%, 81%, 0.500) 2px
+    
+  }
+
+  .kira {
+    background-color: white;
+    grid-area: kira;
+    padding: 1.8rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .kira img {
+    border-radius: 50%;
+    width: 1.8rem;
+    border: solid hsla(0, 0%, 81%, 0.500) 2px
+    
+  }
+
+  .kira > div {
+    display: flex;
+    align-items: center;
+    font-size: 0.65rem;
+    color: hsl(0, 0%, 81%);
+  }
+
+
+  .jean {
+    background-color: white;
+    grid-area: jean;
+    padding: 1.8rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .jean img {
+    border-radius: 50%;
+    width: 1.8rem;
+    border: solid hsla(0, 0%, 81%, 0.500) 2px
+    
+  }
+
+  .jean > div {
+    display: flex;
+    align-items: center;
+    font-size: 0.65rem;
+    color: hsl(0, 0%, 81%);
+  }
+
+
+
+  .patric {
+    background-color:var(--clr-blackishblue-400);
+    grid-area: patrick;
+    padding: 1.9rem;
+ 
+  }
+
+  .patric > div {
+    display: flex;
+    align-items: center;
+    font-size: 0.65rem;
+    color: hsl(0, 0%, 81%);
+
+    
+  }
+
+
+  .patric img {
+    border-radius: 50%;
+    width: 1.8rem;
+    border: solid rgb(117, 65, 200, 0.600) 2px
+    
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 750px) {
+
+    section {
+    display: flex;
+    /* grid-template-areas: 
+    'daniel  jonathan '
+    'jean patrick kira'
+    ; */
+    flex-direction: column;
+  
+    }
+
+    
+  }
+
+  @media screen and (min-width: 630px) and (max-width: 750px) {
+
+    section {
+    display: flex;
+    /* grid-template-areas: 
+    'daniel  jonathan '
+    'jean patrick kira'
+    ; */
+    flex-direction: column;
+  
+    }
+
+    
+  }
+
+
+  @media screen and (min-width: 480px) and (max-width: 630px) {
+
+    section {
+    display: flex;
+    /* grid-template-areas: 
+    'daniel  jonathan '
+    'jean patrick kira'
+    ; */
+    flex-direction: column;
+
+  
+    }
+
+    section > div {
+        width: 60vw;
+        height: 60vh;
+    }
+
+    .daniel svg {
+        position: absolute;
+        left: 50%;
+        top: 15%;
+    
+    
+    
+  }
+
+    
+  }
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 750px) and (max-width: 1213px) {
+
+    section {
+        width: 80vw;
+ 
+        display: grid; /* Explicitly set grid display */
+        grid-template-areas: 
+            "daniel jonathan"
+            "jean patrick"
+            "kira kira"; /* Adjust if you want Kira to span both columns */
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 3fr;
+        gap: 15px;
+        grid-gap: 2rem;
+    }
+
+    .kira {
+        grid-area: kira;
+        margin-bottom: 12%;
+    }
+
+    .daniel {
+        grid-area: daniel;
+    }
+
+    .jean {
+        grid-area: jean;
+    }
+
+    .jonathan {
+        grid-area: jonathan;
+    }
+
+    .patric {
+        grid-area: patrick;
+    }
+
+    .daniel svg {
+        position: absolute;
+        left: 29%;
+        top: 15%;
+  
+  }
+
+.responsive-break {
+    display: none;
+  }
+
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 630px) {
+
+    section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    /* grid-template-areas: 
+    'daniel  jonathan '
+    'jean patrick kira'
+    ; */
+    flex-direction: column;
+    }
+
+    section > div {
+        width: 65vw;
+        height: 65vh;
+    }
+
+    .daniel svg {
+        position: absolute;
+        left: 51%;
+        top: 4%;
+  }
+
+
+.responsive-break {
+    display: none;
+  }
+
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+
+    section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+ 
+    /* grid-template-areas: 
+    'daniel  jonathan '
+    'jean patrick kira'
+    ; */
+    flex-direction: column;
+    }
+
+    section > div {
+        width: 92vw;
+        height: 75vh;
+    }
+
+    .daniel svg {
+        position: absolute;
+        left: 55%;
+        top: 4%;
+  }
+
+ .responsive-break {
+    display: none;
+  }
+
+  svg {
+    z-index: 1;
+  }
+
+
+
+}
+
+
+
